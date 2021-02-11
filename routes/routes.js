@@ -3,21 +3,21 @@ const path = require('path');
 
 module.exports = app => {
 
-    // Setup notes variable
+    // Notes variable
     fs.readFile("db/db.json", "utf8", (err, data) => {
 
         if (err) throw err;
 
-        let notes = JSON.parse(data);
+        const notes = JSON.parse(data);
 
         // API Routes   
 
-        //api/notes get route
+        // api/notes get route
         app.get("/api/notes", function(req, res) {
             res.json(notes);
         });
 
-        //api/notes post route
+        // api/notes post route
         app.post("/api/notes", function(req, res) {
             let newNote = req.body;
             notes.push(newNote);
@@ -30,26 +30,25 @@ module.exports = app => {
             res.json(notes[req.params.id]);
         });
 
-        // Deletes a note by id
+        // Delete note 
         app.delete("/api/notes/:id", function(req, res) {
             notes.splice(req.params.id, 1);
             updateDb();
             console.log("Deleted note with id " + req.params.id);
         });
 
-        // VIEW Routes       
+        // View Routes       
 
-        // Display notes.html when /notes is accessed
+
         app.get('/notes', function(req, res) {
             res.sendFile(path.join(__dirname, "../public/notes.html"));
         });
 
-        // Display index.html when all other routes are accessed
         app.get('*', function(req, res) {
             res.sendFile(path.join(__dirname, "../public/index.html"));
         });
 
-        //Update Json
+        //Update db.json
         function updateDb() {
             fs.writeFile("db/db.json", JSON.stringify(notes, '\t'), err => {
                 if (err) throw err;
