@@ -21,6 +21,6 @@ As a user, I want to be able to write and save notes. I want to be able to delet
  - Application should allow users to delete previously saved notes.
 
 
-Starting page
+**Starting page**
 
-
+<img src="/public/assets/images/startingpage.bmp">
