@@ -1,15 +1,28 @@
 {
-  "name": "note-taker",
+  "name": "hw11_notetaker",
   "version": "1.0.0",
-  "description": "",
+  "description": "Interactive note taker that saves notes for easy retrival",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
-  "author": "",
+  "author": "Leslie Book",
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.4",
     "fs": "^0.0.1-security"
-  }
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leskbook/HW11_NoteTaker.git"
+  },
+  "bugs": {
+    "url": "https://github.com/leskbook/HW11_NoteTaker/issues"
+  },
+  "homepage": "https://github.com/leskbook/HW11_NoteTaker#readme"
 }
