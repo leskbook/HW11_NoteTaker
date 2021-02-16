@@ -23,4 +23,4 @@ As a user, I want to be able to write and save notes. I want to be able to delet
 
 Starting page
 
-<img src="assets/images/startingpage.bmp">
+
