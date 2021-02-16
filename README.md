@@ -2,7 +2,7 @@
 
 **Note Taker using express**
 
-Github repository 
+Github repository https://github.com/leskbook/HW11_NoteTaker
 
 Heroku link
 
