@@ -6,9 +6,11 @@ Github repository
 Heroku link
 
 **Description**
+
 Create an application that can be used to write, save, and delete notes. This application will use an express backend and save and retrieve note data from a JSON file.
 
 **Use Case**
+
 As a user, I want to be able to write and save notes. I want to be able to delete notes I've previously written so that I can organize my thoughts and keep track of tasks I need to complete.
 
 **Acceptance Criteria**
