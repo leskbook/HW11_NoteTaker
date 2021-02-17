@@ -19,8 +19,10 @@ As a user, I want to be able to write and save notes. I want to be able to delet
  - Application should allow users to create and save notes.
  - Application should allow users to view previously saved notes.
  - Application should allow users to delete previously saved notes.
+ - Publish links to deployed app on Heroku and link to Github repository
 
 
-**Starting page**
-
-<img src="/public/assets/images/startingpage.bmp">
+**Technology used**
+ - Pre-provided note.html and index.html, css
+ - Used npm express, fs, path
+ - ajax and node.js
