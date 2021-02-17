@@ -4,7 +4,7 @@
 
 Github repository https://github.com/leskbook/HW11_NoteTaker
 
-Heroku link
+Heroku link https://hw11-takingnotes.herokuapp.com/
 
 **Description**
 
