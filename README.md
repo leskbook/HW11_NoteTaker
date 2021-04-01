@@ -26,3 +26,10 @@ As a user, I want to be able to write and save notes. I want to be able to delet
  - Pre-provided note.html and index.html, css
  - Used npm express, fs, path
  - ajax and node.js
+
+**Screenshots**
+
+<br>
+<img src="/notetaker1.png">
+<br>
+<img src="/note2.png">
